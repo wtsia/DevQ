@@ -6,5 +6,13 @@
     "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
     "type": "HTML",
     "id": 1
+  },
+  {
+    "question": "2 What is HTML?",
+    "hint": "2 \"Hypertext\" refers to links that connect web pages to one another, either within a single website or between websites.",
+    "answer": "2 HyperText Markup Language",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "type": "HTML",
+    "id": 2
   }
 ]
