@@ -1,27 +1,43 @@
-import React from "react";
+import React, { Component } from "react";
 import { Route, Link, Switch, Redirect } from "react-router-dom";
-import logo from "./logo.svg";
 import "./App.css";
+import Home from "./Components/Home.js";
+import About from "./Components/About.js";
+import Question from "./Components/Question.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <nav>
+            <Link to="/home">
+              <h1>[ Home ]</h1>
+            </Link>
+            <h1>[ GA-Code-Challenge ]</h1>
+            <Link to="/about">
+              <h1>[ About ]</h1>
+            </Link>
+          </nav>
+        </header>
+        <main>
+          <div>
+            <Switch>
+              <Route path="/home" component={Home} />
+              <Route path="/about" component={About} />
+              <Route
+                path="/:question"
+                render={route => (
+                  <Question {...route} questions={this.state.questions} />
+                )}
+              />
+              <Route path="/*" render={() => <Redirect to="/home" />} />
+            </Switch>
+          </div>
+        </main>
+      </div>
+    );
+  }
 }
 
 export default App;
