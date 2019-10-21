@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Home.css"
 
 class Home extends Component {
     // constructor(props) {
@@ -6,8 +7,7 @@ class Home extends Component {
     // }
     render() {
         return(
-            <div className="questions">
-            <h1>Hello world!</h1>
+            <div className="languages">
             <button>HTML</button>
             <button>JavaScript</button>
             <button>Express</button>

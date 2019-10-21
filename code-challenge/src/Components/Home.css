@@ -1,0 +1,12 @@
+div.languages {
+   flex-wrap: wrap;
+   width: 500px;
+}
+.languages > button {
+    border: 1px solid black;
+    flex: 1 1 auto;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+
+}
