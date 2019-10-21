@@ -8,7 +8,8 @@ class Question extends Component {
       hint: "",
       answer: "",
       url: "",
-      type: ""
+      type: "",
+      id: 0
     };
   }
   render() {
