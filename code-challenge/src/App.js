@@ -4,8 +4,15 @@ import "./App.css";
 import Home from "./Components/Home.js";
 import About from "./Components/About.js";
 import Question from "./Components/Question.js";
+import QuestionJson from "./Components/Question.json";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hikes: QuestionJson
+    };
+  }
   render() {
     return (
       <div className="App">

@@ -12,7 +12,14 @@ class Question extends Component {
     };
   }
   render() {
-    return <h1>{this.item.type}</h1>;
+    let item = this.props.question.find(
+      question => question.type === this.props.match.params.type
+    );
+    return (
+      <div className="container" key={item.type}>
+        return <h1>{item.type}</h1>;
+      </div>
+    );
   }
 }
 

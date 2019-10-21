@@ -3,7 +3,8 @@ div.languages {
   width: 900px;
   position: relative;
 }
-.languages > button {
+
+.button {
   border: 1px solid black;
   flex: 1 1 auto;
   width: 350px;
@@ -11,4 +12,9 @@ div.languages {
   margin: 40px;
   background-color: rgb(142, 176, 176);
   font-size: 25px;
+}
+
+.languages > button > a {
+  text-decoration: none;
+  color: black;
 }
