@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import QuestionJson from "./Question.json";
+import questionJson from "./Question.json";
 
 class Home extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class Home extends Component {
     };
   }
   render() {
-    let questionTypes = QuestionJson.map(item => {
+    let questionTypes = questionJson.map(item => {
       return (
         <div className="container">
           <div className="languages" key={item.question}>

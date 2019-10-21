@@ -16,8 +16,8 @@ class Question extends Component {
       question => question.type === this.props.match.params.type
     );
     return (
-      <div className="container" key={item.type}>
-        return <h1>{item.type}</h1>;
+      <div className="container" key={item.question}>
+        <h1>{item.type}</h1>;
       </div>
     );
   }

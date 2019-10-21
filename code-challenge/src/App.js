@@ -4,13 +4,13 @@ import "./App.css";
 import Home from "./Components/Home.js";
 import About from "./Components/About.js";
 import Question from "./Components/Question.js";
-import QuestionJson from "./Components/Question.json";
+import questionJson from "./Components/Question.json";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      questions: QuestionJson
+      questions: questionJson
     };
   }
   render() {
@@ -30,10 +30,11 @@ class App extends Component {
         <main>
           <div>
             <Switch>
-              <Route path="/home" component={Home} />
-              <Route path="/about" component={About} />
+              <Route path="/home" exact component={Home} />
+              <Route path="/about" exact component={About} />
               <Route
                 path="/:question"
+                exact
                 render={route => (
                   <Question {...route} questions={this.state.questions} />
                 )}
