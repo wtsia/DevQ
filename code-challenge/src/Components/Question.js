@@ -1,8 +1,18 @@
 import React, { Component } from "react";
 
 class Question extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      question: "",
+      hint: "",
+      answer: "",
+      url: "",
+      type: ""
+    };
+  }
   render() {
-    return <h1>Question Test</h1>;
+    return <h1>{this.item.type}</h1>;
   }
 }
 
