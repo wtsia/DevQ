@@ -12,7 +12,7 @@ class Question extends Component {
     };
   }
   render() {
-    let item = this.props.question.find(
+    let item = this.props.questions.find(
       question => question.type === this.props.match.params.type
     );
     return (
