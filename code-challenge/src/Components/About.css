@@ -1,9 +1,8 @@
 div.About {
-    width: 800px;
-    position: relative;
-    left: 30%
+  text-align: center;
+  width: 800px;
 }
-div.About > p{
-    font-size: 30px;
-    
+
+div.About > p {
+  font-size: 30px;
 }
