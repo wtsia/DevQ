@@ -1,3 +1,9 @@
+nav {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
 a {
   text-decoration: none;
 }
@@ -6,10 +12,9 @@ a {
   text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
+.logo {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .container {
@@ -20,11 +25,6 @@ nav {
 .link {
   color: white;
   text-decoration: none;
-}
-
-.logo {
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .App-header {
