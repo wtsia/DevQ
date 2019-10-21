@@ -11,4 +11,4 @@ What to run:
 <code>
 npm install
 npm run start
-<code>
+</code>
