@@ -12,11 +12,11 @@ class App extends Component {
         <header className="App-header">
           <nav>
             <Link to="/home">
-              <h1>[ Home ]</h1>
+              <h1 className="link home">[ Home ]</h1>
             </Link>
-            <h1>[ GA-Code-Challenge ]</h1>
+            <h1 className="logo">GA-Code-Challenge</h1>
             <Link to="/about">
-              <h1>[ About ]</h1>
+              <h1 className="link about">[ About ]</h1>
             </Link>
           </nav>
         </header>
