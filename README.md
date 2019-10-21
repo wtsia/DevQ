@@ -2,7 +2,7 @@
 
 What I ran:
 <code>
-npx create-react-app code challenge
+npx create-react-app code-challenge
 </code>
 
 Things to run:
