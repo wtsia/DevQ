@@ -15,7 +15,6 @@ class Question extends Component {
       .then(res => res.json())
       .then(
         result => {
-          console.log(result);
           this.setState({
             isLoaded: true,
             items: result
@@ -37,7 +36,6 @@ class Question extends Component {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      console.log(this.props);
       return (
         <ul>
           {items.map(item => (

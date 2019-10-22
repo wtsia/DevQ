@@ -4,15 +4,37 @@ import "./App.css";
 import Home from "./Components/Home.js";
 import About from "./Components/About.js";
 import Question from "./Components/Question.js";
-import questionJson from "./Components/Question.json";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      questions: questionJson
+      error: null,
+      isLoaded: false,
+      items: []
     };
   }
+
+  componentDidMount() {
+    fetch("https://immense-citadel-86220.herokuapp.com/")
+      .then(res => res.json())
+      .then(
+        result => {
+          console.log(result);
+          this.setState({
+            isLoaded: true,
+            items: result
+          });
+        },
+        error => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
+      );
+  }
+
   render() {
     return (
       <div className="App">
@@ -36,7 +58,7 @@ class App extends Component {
                 exact
                 path="/:question"
                 render={route => (
-                  <Question {...route} questions={this.state.questions} />
+                  <Question {...route} items={this.state.items} />
                 )}
               />
               <Route path="/*" render={() => <Redirect to="/home" />} />
