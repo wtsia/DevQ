@@ -94,18 +94,6 @@
         "hint": "Conditional rendering in React works the same way conditions work in JavaScript.",
         "answer": "Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them.",
         "url": "https://reactjs.org/docs/conditional-rendering.html"
-      },
-      {
-        "question": "",
-        "hint": "",
-        "answer": "",
-        "url": ""
-      },
-      {
-        "question": "",
-        "hint": "",
-        "answer": "",
-        "url": ""
       }
     ]
   }
