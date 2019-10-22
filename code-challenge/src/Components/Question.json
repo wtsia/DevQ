@@ -10,204 +10,168 @@
     "question": "What is an Element?",
     "hint": "An element is a part of a webpage.",
     "answer": "An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag.",
-    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Element"
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Element",
+    "type": "HTML"
   },
   {
     "question": "What is a Tag?",
     "hint": "In HTML a tag is used for creating an element.",
     "answer": "In HTML a tag is used for creating an element. The name of an HTML element is the name used in angle brackets such as <p> for paragraph.  Note that the end tag's name is preceded by a slash character, \"</p>\", and that in empty elements the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case.",
-    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag"
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag",
+    "type": "HTML"
   },
   {
     "question": "What is an Attribute?",
     "hint": "Elements can also have attributes",
     "answer": "Attributes contain extra information about the element which you don't want to appear in the actual content. An attribute should have a space between it and the element name (or the previous attribute, if the element already has one or more attributes), the attribute name, followed by an equal sign, and an attribute value, with opening and closing quote marks wrapped around it.",
-    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag"
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag",
+    "type": "HTML"
   },
   {
     "question": "What is the Main Root?",
     "hint": "<html>",
     "answer": "The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",
+    "type": "HTML"
   },
   {
     "question": "What is the Header Element?",
     "hint": "<head>",
     "answer": "The HTML <head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head",
+    "type": "HTML"
   },
   {
     "question": "What is the Sectioning Root?",
     "hint": "<body>",
     "answer": "The HTML <body> Element represents the content of an HTML document. There can be only one <body> element in a document.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body",
+    "type": "HTML"
   },
   {
     "question": "What is Metadata?",
     "hint": "Metadata contains information about the page.",
     "answer": "Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+    "type": "HTML"
   },
   {
     "question": "How would you imbed an image to the document?",
     "hint": "<img>",
     "answer": "The HTML <img> element embeds an image into the document. The src attribute is required, and contains the path to the image you want to embed. The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility — screen readers read this description out to their users so they know what the image means. Alt text is also displayed on the page if the image can't be loaded for some reason: for example, network errors, content blocking, or linkrot.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+    "type": "HTML"
   },
   {
     "question": "What is JavaScript?",
     "hint": "JavaScript is a coding language.",
     "answer": "JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g. having complex animations, clickable buttons, popup menus, etc.).",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction",
+    "type": "JavaScript"
   },
   {
     "question": "Describe the three kinda of variable declarations in JavaScript.",
     "hint": "Var, Let, Const.",
     "answer": "Var - declares a variable, optionally initializing it to a value. Let - Declares a block-scoped, local variable, optionally initializing it to a value. Const - Declares a block-scoped, read-only named constant.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types",
+    "type": "JavaScript"
   },
   {
     "question": "What are some examples of JavaScript Data Types?",
     "hint": "The latest ECMAScript standard defines eight data types.",
     "answer": "Boolean - True and False. Null - A special keyword denoting a null value. Undefined - A top-level property whose value is not defined. Number - An integer or floating point number. BigInt - An integer with arbitrary precision. String - A sequence of characters that represent a text value. Symbol -  A data type whose instances are unique and immutable. Object.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_Types",
+    "type": "JavaScript"
   },
   {
     "question": "What is an Object?",
     "hint": "Objects sometimes refer to real-world things, for example a car or map object in a racing game.",
     "answer": "Object refers to a data structure containing data and instructions for working with the data. Objects sometimes refer to real-world things, for example a car or map object in a racing game. JavaScript, Java, C++, Python, and Ruby are examples of object-oriented programming languages.",
-    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Object"
+    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Object",
+    "type": "JavaScript"
   },
   {
     "question": "What is a Function?",
     "hint": "",
     "answer": "Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions",
+    "type": "JavaScript"
   },
   {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
+    "question": "What is CSS?",
+    "hint": "Cascading Style Sheets",
+    "answer": "Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "type": "CSS"
   },
   {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
+    "question": "What is a CSS Property?",
+    "hint": "An identifier.",
+    "answer": "The property which is an identifier, that is a human-readable name, that defines which feature is considered.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax",
+    "type": "CSS"
   },
   {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
+    "question": "What is a CSS Value?",
+    "hint": "Each property requires a value.",
+    "answer": "The value which describe how the feature must be handled by the engine. Each property has a set of valid values, defined by a formal grammar, as well as a semantic meaning, implemented by the browser engine.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax",
+    "type": "CSS"
   },
   {
     "question": "What is React?",
     "hint": "A library.",
     "answer": "A JavaScript library for building user interfaces.",
-    "url": "https://reactjs.org/"
+    "url": "https://reactjs.org/",
+    "type": "React"
   },
   {
     "question": "How are React Elements rendered?",
     "hint": "An element describes what you want to see on the screen.",
     "answer": "Unlike browser DOM elements, React elements are plain objects, and are cheap to create. React DOM takes care of updating the DOM to match the React elements.",
-    "url": "https://reactjs.org/docs/rendering-elements.html"
+    "url": "https://reactjs.org/docs/rendering-elements.html",
+    "type": "React"
   },
   {
     "question": "What is a React Component?",
     "hint": "Conceptually, components are like JavaScript functions.",
     "answer": "Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.",
-    "url": "https://reactjs.org/docs/components-and-props.html"
+    "url": "https://reactjs.org/docs/components-and-props.html",
+    "type": "React"
   },
   {
     "question": "What is a characteristic of a React Prop?",
     "hint": "All React components must act like pure functions with respect to their props.",
     "answer": "Props are Read-Only. Whether you declare a component as a function or a class, it must never modify its own props.",
-    "url": "https://reactjs.org/docs/components-and-props.html"
+    "url": "https://reactjs.org/docs/components-and-props.html",
+    "type": "React"
   },
   {
     "question": "What are three characteristics of a React State?",
     "hint": "State is similar to props, but it is private and fully controlled by the component.",
     "answer": "Do not modify state directly. State updates may be asynchronous. State updates are merged",
-    "url": "https://reactjs.org/docs/state-and-lifecycle.html"
+    "url": "https://reactjs.org/docs/state-and-lifecycle.html",
+    "type": "React"
   },
   {
     "question": "How does Conditional Rendering work in React?",
     "hint": "Conditional rendering in React works the same way conditions work in JavaScript.",
     "answer": "Conditional rendering in React works the same way conditions work in JavaScript. Use JavaScript operators like if or the conditional operator to create elements representing the current state, and let React update the UI to match them.",
-    "url": "https://reactjs.org/docs/conditional-rendering.html"
+    "url": "https://reactjs.org/docs/conditional-rendering.html",
+    "type": "React"
   },
   {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
+    "question": "What is Express?",
+    "hint": "A Web Framework",
+    "answer": "Express is a popular unopinionated web framework, written in JavaScript and hosted within the Node.js runtime environment.",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs",
+    "type": "Express"
   },
   {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
-  },
-  {
-    "question": "",
-    "hint": "",
-    "answer": "",
-    "url": ""
+    "question": "What is Node?",
+    "hint": "More formally known as Node.js",
+    "answer": "Node (or more formally Node.js) is an open-source, cross-platform, runtime environment that allows developers to create all kinds of server-side tools and applications in JavaScript.",
+    "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
+    "type": "Node"
   }
 ]

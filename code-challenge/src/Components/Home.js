@@ -34,9 +34,9 @@ class Home extends Component {
   render() {
     const questionTypes = [
       "HTML",
+      "CSS",
       "JavaScript",
       "Express",
-      "CSS",
       "React",
       "Node"
     ];
