@@ -1,74 +1,78 @@
 [
   {
-    "question": "What is HTML?",
-    "hint": "\"Hypertext\" refers to links that connect web pages to one another, either within a single website or between websites.",
-    "answer": "HyperText Markup Language",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    "type": "HTML",
-    "id": 0
-  },
-  {
-    "question": "What is an Element?",
-    "hint": "An element is a part of a webpage.",
-    "answer": "An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag.",
-    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Element",
-    "type": "HTML",
-    "id": 1
-  },
-  {
-    "question": "What is a Tag?",
-    "hint": "In HTML a tag is used for creating an element.",
-    "answer": "In HTML a tag is used for creating an element. The name of an HTML element is the name used in angle brackets such as <p> for paragraph.  Note that the end tag's name is preceded by a slash character, \"</p>\", and that in empty elements the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case.",
-    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag",
-    "type": "HTML",
-    "id": 2
-  },
-  {
-    "question": "What is an Attribute?",
-    "hint": "Elements can also have attributes",
-    "answer": "Attributes contain extra information about the element which you don't want to appear in the actual content. An attribute should have a space between it and the element name (or the previous attribute, if the element already has one or more attributes), the attribute name, followed by an equal sign, and an attribute value, with opening and closing quote marks wrapped around it.",
-    "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag",
-    "type": "HTML",
-    "id": 3
-  },
-  {
-    "question": "What is the Main Root?",
-    "hint": "<html>",
-    "answer": "The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",
-    "type": "HTML",
-    "id": 4
-  },
-  {
-    "question": "What is the Header Element?",
-    "hint": "<head>",
-    "answer": "The HTML <head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head",
-    "type": "HTML",
-    "id": 5
-  },
-  {
-    "question": "What is the Sectioning Root?",
-    "hint": "<body>",
-    "answer": "The HTML <body> Element represents the content of an HTML document. There can be only one <body> element in a document.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body",
-    "type": "HTML",
-    "id": 6
-  },
-  {
-    "question": "What is Metadata?",
-    "hint": "Metadata contains information about the page.",
-    "answer": "Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
-    "type": "HTML",
-    "id": 7
-  },
-  {
-    "question": "How would you imbed an image to the document?",
-    "hint": "<img>",
-    "answer": "The HTML <img> element embeds an image into the document. The src attribute is required, and contains the path to the image you want to embed. The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility — screen readers read this description out to their users so they know what the image means. Alt text is also displayed on the page if the image can't be loaded for some reason: for example, network errors, content blocking, or linkrot.",
-    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
-    "type": "HTML",
-    "id": 8
+    "html": [
+      {
+        "question": "What is HTML?",
+        "hint": "\"Hypertext\" refers to links that connect web pages to one another, either within a single website or between websites.",
+        "answer": "HyperText Markup Language",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+        "type": "HTML",
+        "id": 0
+      },
+      {
+        "question": "What is an Element?",
+        "hint": "An element is a part of a webpage.",
+        "answer": "An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag.",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Element",
+        "type": "HTML",
+        "id": 1
+      },
+      {
+        "question": "What is a Tag?",
+        "hint": "In HTML a tag is used for creating an element.",
+        "answer": "In HTML a tag is used for creating an element. The name of an HTML element is the name used in angle brackets such as <p> for paragraph.  Note that the end tag's name is preceded by a slash character, \"</p>\", and that in empty elements the end tag is neither required nor allowed. If attributes are not mentioned, default values are used in each case.",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag",
+        "type": "HTML",
+        "id": 2
+      },
+      {
+        "question": "What is an Attribute?",
+        "hint": "Elements can also have attributes",
+        "answer": "Attributes contain extra information about the element which you don't want to appear in the actual content. An attribute should have a space between it and the element name (or the previous attribute, if the element already has one or more attributes), the attribute name, followed by an equal sign, and an attribute value, with opening and closing quote marks wrapped around it.",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/Tag",
+        "type": "HTML",
+        "id": 3
+      },
+      {
+        "question": "What is the Main Root?",
+        "hint": "<html>",
+        "answer": "The HTML <html> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html",
+        "type": "HTML",
+        "id": 4
+      },
+      {
+        "question": "What is the Header Element?",
+        "hint": "<head>",
+        "answer": "The HTML <head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head",
+        "type": "HTML",
+        "id": 5
+      },
+      {
+        "question": "What is the Sectioning Root?",
+        "hint": "<body>",
+        "answer": "The HTML <body> Element represents the content of an HTML document. There can be only one <body> element in a document.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body",
+        "type": "HTML",
+        "id": 6
+      },
+      {
+        "question": "What is Metadata?",
+        "hint": "Metadata contains information about the page.",
+        "answer": "Metadata contains information about the page. This includes information about styles, scripts and data to help software (search engines, browsers, etc.) use and render the page. Metadata for styles and scripts may be defined in the page or link to another file that has the information.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+        "type": "HTML",
+        "id": 7
+      },
+      {
+        "question": "How would you imbed an image to the document?",
+        "hint": "<img>",
+        "answer": "The HTML <img> element embeds an image into the document. The src attribute is required, and contains the path to the image you want to embed. The alt attribute holds a text description of the image, which isn't mandatory but is incredibly useful for accessibility — screen readers read this description out to their users so they know what the image means. Alt text is also displayed on the page if the image can't be loaded for some reason: for example, network errors, content blocking, or linkrot.",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img",
+        "type": "HTML",
+        "id": 8
+      }
+    ]
   }
 ]
