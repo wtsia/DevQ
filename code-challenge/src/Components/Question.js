@@ -12,7 +12,7 @@ class Question extends Component {
 
   componentDidMount() {
     fetch("https://immense-citadel-86220.herokuapp.com/")
-      //   .then(res => res.json())
+      .then(res => res.json())
       .then(
         result => {
           this.setState({

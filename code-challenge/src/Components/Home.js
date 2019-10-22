@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import questionJson from "./Question.json";
 
 class Home extends Component {
   constructor(props) {
@@ -19,7 +18,7 @@ class Home extends Component {
     let questionTypes = questionJson.map(item => {
       return (
         <div className="container" key={item.type}>
-          <Link className="button" to={"/" + item.type}>
+          <Link className="button" to={"/*"}>
             HTML
           </Link>
           <Link className="button" to={"/" + item.type}>
