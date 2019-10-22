@@ -37,15 +37,12 @@ class Question extends Component {
       return <div>Loading...</div>;
     } else {
       let item = items;
-      for(let i = 0; i < item.length; i++){
-        if(item[0].question){
-          
+      for (let i = 0; i < item.length; i++) {
+        if (item[0].question) {
         }
       }
-              return (
+      return (
         <div>
-
-          
           {/* <a href={item[1].question}>Next</a> */}
           <h1>{item[0].question}</h1>
           <input type="text" placeholder="Answer Here!" />
@@ -53,8 +50,9 @@ class Question extends Component {
           <p>{item[0].hint}</p>
           <h2>Answer:</h2>
           <p>{item[0].answer}</p>
-          <h2>Learn More:</h2>
-          <a href={item[0].url}>MDN Web Docs</a>
+          <h2>
+            <a href={item[0].url}>[ Documentation ]</a>
+          </h2>
         </div>
       );
     }
