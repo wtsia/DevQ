@@ -37,10 +37,18 @@ class Question extends Component {
       return <div>Loading...</div>;
     } else {
       let item = items;
-      return (
+      for(let i = 0; i < item.length; i++){
+        if(item[0].question){
+          
+        }
+      }
+              return (
         <div>
+
+          
+          {/* <a href={item[1].question}>Next</a> */}
           <h1>{item[0].question}</h1>
-          <input type="text" value="Answer Here!" />
+          <input type="text" placeholder="Answer Here!" />
           <h2>Hint:</h2>
           <p>{item[0].hint}</p>
           <h2>Answer:</h2>
