@@ -6,40 +6,51 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      question: "",
-      hint: "",
-      answer: "",
-      url: "",
-      type: "",
-      id: 0
+      error: null,
+      isLoaded: false,
+      items: []
     };
   }
-  render() {
-    let questionTypes = questionJson.map(item => {
-      return (
-        <div className="container" key={item.type}>
-          <Link className="button" to={"/*"}>
-            HTML
-          </Link>
-          <Link className="button" to={"/" + item.type}>
-            JavaScript
-          </Link>
-          <Link className="button" to={"/" + item.type}>
-            Express
-          </Link>
-          <Link className="button" to={"/" + item.type}>
-            CSS
-          </Link>
-          <Link className="button" to={"/" + item.type}>
-            React
-          </Link>
-          <Link className="button" to={"/" + item.type}>
-            Node
-          </Link>
-        </div>
+
+  componentDidMount() {
+    fetch("https://immense-citadel-86220.herokuapp.com/")
+      .then(res => res.json())
+      .then(
+        result => {
+          this.setState({
+            isLoaded: true,
+            items: result
+          });
+        },
+        error => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
       );
-    });
-    return <div> {questionTypes} </div>;
+  }
+
+  render() {
+    const questionTypes = [
+      "HTML",
+      "JavaScript",
+      "Express",
+      "CSS",
+      "React",
+      "Node"
+    ];
+    return (
+      <div className="container">
+        {questionTypes.map(item => {
+          return (
+            <Link className="button" to={"/" + item}>
+              {item}
+            </Link>
+          );
+        })}
+      </div>
+    );
   }
 }
 
