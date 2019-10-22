@@ -36,14 +36,18 @@ class Question extends Component {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
+      let item = items;
       return (
-        <ul>
-          {items.map(item => (
-            <li key={item.question}>
-              {item.question} {item.answer}
-            </li>
-          ))}
-        </ul>
+        <div>
+          <h1>{item[0].question}</h1>
+          <input type="text" value="Answer Here!" />
+          <h2>Hint:</h2>
+          <p>{item[0].hint}</p>
+          <h2>Answer:</h2>
+          <p>{item[0].answer}</p>
+          <h2>Learn More!</h2>
+          <a href={item[0].url}>{item[0].url}</a>
+        </div>
       );
     }
   }
