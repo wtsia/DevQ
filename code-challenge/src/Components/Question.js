@@ -53,8 +53,8 @@ class Question extends Component {
           <p>{item[0].hint}</p>
           <h2>Answer:</h2>
           <p>{item[0].answer}</p>
-          <h2>Learn More!</h2>
-          <a href={item[0].url}>{item[0].url}</a>
+          <h2>Learn More:</h2>
+          <a href={item[0].url}>MDN Web Docs</a>
         </div>
       );
     }
