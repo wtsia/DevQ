@@ -18,27 +18,25 @@ class Home extends Component {
   render() {
     let questionTypes = questionJson.map(item => {
       return (
-        <div className="container">
-          <div className="languages" key={item.question}>
-            <Link className="button" to={"/" + item.type}>
-              HTML
-            </Link>
-            <Link className="button" to={"/" + item.type}>
-              JavaScript
-            </Link>
-            <Link className="button" to={"/" + item.type}>
-              Express
-            </Link>
-            <Link className="button" to={"/" + item.type}>
-              CSS
-            </Link>
-            <Link className="button" to={"/" + item.type}>
-              React
-            </Link>
-            <Link className="button" to={"/" + item.type}>
-              Node
-            </Link>
-          </div>
+        <div className="container" key={item.question}>
+          <Link className="button" to={"/" + item.question}>
+            HTML
+          </Link>
+          <Link className="button" to={"/" + item.question}>
+            JavaScript
+          </Link>
+          <Link className="button" to={"/" + item.question}>
+            Express
+          </Link>
+          <Link className="button" to={"/" + item.question}>
+            CSS
+          </Link>
+          <Link className="button" to={"/" + item.question}>
+            React
+          </Link>
+          <Link className="button" to={"/" + item.question}>
+            Node
+          </Link>
         </div>
       );
     });

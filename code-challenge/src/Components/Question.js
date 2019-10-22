@@ -14,10 +14,10 @@ class Question extends Component {
   }
   render() {
     let item = this.props.questions.find(
-      question => question.type === this.props.match.params.type
+      challenge => challenge.type === this.props.match.params.type
     );
     return (
-      <div className="container" key={item.question}>
+      <div className="container" key={item.type}>
         <h1>{item.type}</h1>;
       </div>
     );
