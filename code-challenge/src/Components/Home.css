@@ -5,13 +5,18 @@ div.languages {
 }
 
 .button {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   border: 1px solid black;
   flex: 1 1 auto;
-  width: 350px;
-  height: 100px;
   margin: 40px;
+  width: 40%;
+  height: 100px;
   background-color: rgb(142, 176, 176);
-  font-size: 25px;
+  font-size: 30px;
+  color: black;
 }
 
 .languages > button > a {

@@ -37,10 +37,10 @@ class Question extends Component {
       return <div>Loading...</div>;
     } else {
       let item = items;
-      for (let i = 0; i < item.length; i++) {
-        if (item[0].question) {
-        }
-      }
+      //   for (let i = 0; i < item.length; i++) {
+      //     if (item[0].question) {
+      //     }
+      //   }
       return (
         <div>
           {/* <a href={item[1].question}>Next</a> */}
