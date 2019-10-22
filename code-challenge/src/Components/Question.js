@@ -1,24 +1,51 @@
 import React, { Component } from "react";
-import question from "./Question.json";
 
 class Question extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      question: { question }
+      error: null,
+      isLoaded: false,
+      items: []
     };
   }
+
+  componentDidMount() {
+    fetch("https://immense-citadel-86220.herokuapp.com/")
+      //   .then(res => res.json())
+      .then(
+        result => {
+          this.setState({
+            isLoaded: true,
+            items: result.items
+          });
+        },
+        error => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
+      );
+  }
+
   render() {
-    let questions = this.props.questions.find(
-      challenge => challenge.type === this.props.match.params.type
-    );
-    return (
-      <div className="container" key={question.type}>
-        <h1>{question[0].question}</h1>
-        <h2>{question[0].type}</h2>
-        <h2>{question[0].hint}</h2>
-      </div>
-    );
+    const { error, isLoaded, items } = this.state;
+    if (error) {
+      return <div>Error: {error.message}</div>;
+    } else if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      return (
+        <ul>
+          {items.map(item => (
+            <li key={item.question}>
+              {item.question} {item.answer}
+            </li>
+          ))}
+        </ul>
+      );
+    }
   }
 }
 
