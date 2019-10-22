@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import question from './Question.json'
+import question from "./Question.json";
 
 class Question extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      question: {question}
-      
+      question: { question }
     };
   }
   render() {
