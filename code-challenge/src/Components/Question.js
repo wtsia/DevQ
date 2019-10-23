@@ -45,7 +45,11 @@ class Question extends Component {
         <div>
           {/* <a href={item[1].question}>Next</a> */}
           <h1>{item[0].question}</h1>
-          <input type="text" placeholder="Answer Here!" />
+          <input
+            className="answer"
+            type="text"
+            placeholder="Write Your Answer Here! Check Below &darr;"
+          />
           <h2>Hint:</h2>
           <p>{item[0].hint}</p>
           <h2>Answer:</h2>
