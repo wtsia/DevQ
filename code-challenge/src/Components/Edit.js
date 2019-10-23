@@ -36,17 +36,23 @@ class Edit extends Component {
 
 
   render() {
-    const {items} = this.state
-    let item = items
+    const { error, isLoaded, items } = this.state;
+    if (error && items) {
+      return <div>Error: {error.message}</div>;
+    } else if (!isLoaded) {
+      return <div>Loading...</div>;
+    } else {
+      // let current = this.state.x + 1;
+      let item = items;
     return (
       <div className="container">
         <div className="editContainer">
           <h1>Edit</h1>
           <div className="edit">
-            <form action="/edit/:id?_method=put" method="post">
+            <form action="/edit/:question?_method=put" method="post">
               <p>
                 <h2>Question:</h2>
-                <input className="editPage" type="text" name="question" placeholder={this.state.items.question}/>
+                <input className="editPage" type="text" name="question" placeholder={items.question}/>
               </p>
               <p>
                 <h2>Hint: </h2>
@@ -79,5 +85,5 @@ class Edit extends Component {
     );
   }
 }
-
+}
 export default Edit;

@@ -16,6 +16,7 @@ class Question extends Component {
 
   componentDidMount() {
     let language = this.props.match.params.question;
+    console.log(language)
     fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
       .then(res => res.json())
       .then(
@@ -37,8 +38,11 @@ class Question extends Component {
 
   nextQuestion = () => {
     const { items } = this.state;
+    let item = items
+    console.log(item[this.state.x].id)
     let current = this.state.x;
     if (current < items.length - 1) {
+     
       this.setState({
         x: this.state.x + 1
       });
@@ -53,8 +57,8 @@ class Question extends Component {
       });
     }
   };
-
   render() {
+    
     const { error, isLoaded, items } = this.state;
     if (error && items) {
       return <div>Error: {error.message}</div>;
@@ -76,24 +80,27 @@ class Question extends Component {
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
-          <Link to={"/Edit/:id"}>
+          <Link to={"/Edit/" + item[this.state.x].question}>
              <button>Edit</button> 
             </Link>
-      
+            {/* <h3>
+                Gabe
+                {this.props.children.id}
+              </h3> */}
           <div className="answers">
             <h2>Hint:</h2>
             <p>{item[this.state.x].hint}</p>
             <h2>Answer:</h2>
             <p>{item[this.state.x].answer}</p>
             <h2>
+            
+          
               <a target="_blank" href={item[this.state.x].url}>
                 [ Documentation ]
               </a>
             </h2>
           </div>
-            <Link to={"/Edit/:id"}>
-             <a href="/edit/:id"><h1 className="link Edit">[ Edit ]</h1></a> 
-            </Link>
+       
        
         </div>
       );
