@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, Link, Switch, Redirect } from "react-router-dom";
 import "./Question.css";
+import "./Edit"
 
 class Question extends Component {
   constructor(props) {
@@ -77,7 +78,9 @@ class Question extends Component {
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
-          <button href="">Edit</button>
+          <Link to={"/Edit"}>
+             <button>Edit</button> 
+            </Link>
           <div className="answers">
             <h2>Hint:</h2>
             <p>{item[this.state.x].hint}</p>
@@ -88,10 +91,10 @@ class Question extends Component {
                 [ Documentation ]
               </a>
             </h2>
-            <Link to={"/Edit"}>
-              <h1 className="link Edit">[ Edit ]</h1>
-            </Link>
           </div>
+            <Link to={"/Edit"}>
+             <a href="/edit"><h1 className="link Edit">[ Edit ]</h1></a> 
+            </Link>
         </div>
       );
     }
