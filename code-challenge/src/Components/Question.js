@@ -48,15 +48,17 @@ class Question extends Component {
           <input
             className="answer"
             type="text"
-            placeholder="Write Your Answer Here! Check Below &darr;"
+            placeholder="Write Your Answer Here! Check Below&darr;"
           />
-          <h2>Hint:</h2>
-          <p>{item[0].hint}</p>
-          <h2>Answer:</h2>
-          <p>{item[0].answer}</p>
-          <h2>
-            <a href={item[0].url}>[ Documentation ]</a>
-          </h2>
+          <div className="answers">
+            <h2>Hint:</h2>
+            <p>{item[0].hint}</p>
+            <h2>Answer:</h2>
+            <p>{item[0].answer}</p>
+            <h2>
+              <a href={item[0].url}>[ Documentation ]</a>
+            </h2>
+          </div>
         </div>
       );
     }
