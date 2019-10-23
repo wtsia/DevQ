@@ -51,7 +51,8 @@ class Edit extends Component {
       return (
         <div className="container">
           <div className="editContainer">
-            <h1>Edit</h1>
+            <h1>Edit Question</h1>
+            <p>Don't forget to rewrite all input fields :)</p>
             <div className="edit">
               <form
                 action={`https://immense-citadel-86220.herokuapp.com/edit/${this.props.match.params.id}?_method=put`}
