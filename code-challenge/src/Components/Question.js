@@ -67,13 +67,13 @@ class Question extends Component {
       return (
         <div>
           <h1>{item[this.state.x].question}</h1>
-          <h2>
+          <p>
             {current}/{items.length}
-          </h2>
+          </p>
           <input
             className="answer"
             type="text"
-            placeholder="Write Your Answer Here! Check Below&darr;"
+            placeholder="Write Your Answer Here! Check Below."
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
@@ -84,7 +84,9 @@ class Question extends Component {
             <h2>Answer:</h2>
             <p>{item[this.state.x].answer}</p>
             <h2>
-              <a href={item[this.state.x].url}>[ Documentation ]</a>
+              <a target="_blank" href={item[this.state.x].url}>
+                [ Documentation ]
+              </a>
             </h2>
             <Link to={"/Edit"}>
               <h1 className="link Edit">[ Edit ]</h1>
