@@ -15,24 +15,24 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
-    fetch("https://immense-citadel-86220.herokuapp.com/")
-      .then(res => res.json())
-      .then(
-        result => {
-          this.setState({
-            isLoaded: true,
-            items: result
-          });
-        },
-        error => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      );
-  }
+  // componentDidMount() {
+  //   fetch("https://immense-citadel-86220.herokuapp.com/")
+  //     .then(res => res.json())
+  //     .then(
+  //       result => {
+  //         this.setState({
+  //           isLoaded: true,
+  //           items: result
+  //         });
+  //       },
+  //       error => {
+  //         this.setState({
+  //           isLoaded: true,
+  //           error
+  //         });
+  //       }
+  //     );
+  // }
 
   render() {
     return (
