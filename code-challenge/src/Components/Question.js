@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Link, Switch, Redirect } from "react-router-dom";
 import "./Question.css";
-import "./Edit"
+import "./Edit";
 
 class Question extends Component {
   constructor(props) {
@@ -38,8 +38,6 @@ class Question extends Component {
   nextQuestion = () => {
     const { items } = this.state;
     let current = this.state.x;
-    console.log(items.length);
-    console.log(this.state.x);
     if (current < items.length - 1) {
       this.setState({
         x: this.state.x + 1
@@ -81,6 +79,7 @@ class Question extends Component {
           <Link to={"/Edit/:id"}>
              <button>Edit</button> 
             </Link>
+      
           <div className="answers">
             <h2>Hint:</h2>
             <p>{item[this.state.x].hint}</p>
@@ -95,6 +94,7 @@ class Question extends Component {
             <Link to={"/Edit/:id"}>
              <a href="/edit/:id"><h1 className="link Edit">[ Edit ]</h1></a> 
             </Link>
+       
         </div>
       );
     }
