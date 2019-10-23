@@ -20,7 +20,8 @@ class Question extends Component {
         result => {
           this.setState({
             isLoaded: true,
-            items: result
+            items: result,
+            x: 0
           });
         },
         error => {
