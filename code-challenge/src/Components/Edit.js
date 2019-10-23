@@ -63,7 +63,7 @@ class Edit extends Component {
                     className="editPage"
                     type="text"
                     name="question"
-                    value={items.question}
+                    placeholder={items.question}
                   />
                 </p>
                 <p>
@@ -72,7 +72,7 @@ class Edit extends Component {
                     className="editPage"
                     type="text"
                     name="hint"
-                    value={items.hint}
+                    placeholder={items.hint}
                   />
                 </p>
                 <p>
@@ -81,7 +81,7 @@ class Edit extends Component {
                     className="editPage"
                     type="text"
                     name="answer"
-                    value={items.answer}
+                    placeholder={items.answer}
                   />
                 </p>
                 <p>
@@ -90,7 +90,7 @@ class Edit extends Component {
                     className="editPage"
                     type="text"
                     name="url"
-                    value={items.url}
+                    placeholder={items.url}
                   />
                 </p>
                 <p>
