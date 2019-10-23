@@ -8,6 +8,7 @@ class About extends Component {
         <div className="About">
           <h1>About Us // Read Me</h1>
           <div className="answers">
+            <p>Corey</p>
             <p>
               Well, the way they make shows is, they make one show. That show's
               called a pilot. Then they show that show to the people who make
