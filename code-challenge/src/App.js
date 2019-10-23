@@ -10,8 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      error: null,
-      isLoaded: false,
+      // error: null,
+      // isLoaded: false,
       items: []
     };
   }
@@ -35,7 +35,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/Edit" component={Edit} />
+              <Route exact path="/Edit/:id" component={Edit} />
               <Route
                 exact
                 path="/:question"
@@ -43,7 +43,7 @@ class App extends Component {
                   <Question {...route} items={this.state.items} />
                 )}
               />
-              <Route path="/*" render={() => <Redirect to="/home" />} />
+              {/* <Route path="/*" render={() => <Redirect to="/home" />} /> */}
             </Switch>
           </div>
         </main>

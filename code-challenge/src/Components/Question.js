@@ -78,7 +78,7 @@ class Question extends Component {
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
-          <Link to={"/Edit"}>
+          <Link to={"/Edit/:id"}>
              <button>Edit</button> 
             </Link>
           <div className="answers">
@@ -92,8 +92,8 @@ class Question extends Component {
               </a>
             </h2>
           </div>
-            <Link to={"/Edit"}>
-             <a href="/edit"><h1 className="link Edit">[ Edit ]</h1></a> 
+            <Link to={"/Edit/:id"}>
+             <a href="/edit/:id"><h1 className="link Edit">[ Edit ]</h1></a> 
             </Link>
         </div>
       );
