@@ -8,6 +8,11 @@ a {
   color: black;
 }
 
+main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .App {
   text-align: center;
 }
@@ -41,7 +46,7 @@ a {
 }
 
 .answer {
-  width: 75%;
+  width: 95%;
   height: 50px;
   font-size: 20px;
 }
