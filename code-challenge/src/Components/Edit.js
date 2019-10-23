@@ -14,7 +14,8 @@ class Edit extends Component {
 
   componentDidMount() {
     let language = this.props.match.params.id;
-    fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
+    console.log(this.props)
+    fetch(`https://immense-citadel-86220.herokuapp.com/edit/${language}`)
       .then(res => res.json())
       .then(
         result => {
@@ -22,7 +23,7 @@ class Edit extends Component {
             isLoaded: true,
             items: result,
             x: 0
-          });
+          },(newState) => console.log(this.state, newState));
         },
         error => {
           this.setState({
@@ -44,12 +45,14 @@ class Edit extends Component {
     } else {
       // let current = this.state.x + 1;
       let item = items;
+      console.log(item)
+      console.log(items)
     return (
       <div className="container">
         <div className="editContainer">
           <h1>Edit</h1>
           <div className="edit">
-            <form action="/edit/:question?_method=put" method="post">
+            <form action={`https://immense-citadel-86220.herokuapp.com/edit/${this.props.match.params.id}?_method=put`} method="POST">
               <p>
                 <h2>Question:</h2>
                 <input className="editPage" type="text" name="question" placeholder={items.question}/>

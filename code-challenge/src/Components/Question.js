@@ -25,7 +25,7 @@ class Question extends Component {
             isLoaded: true,
             items: result,
             x: 0
-          });
+          }, (newState) => console.log(this.state, newState));
         },
         error => {
           this.setState({
@@ -60,6 +60,7 @@ class Question extends Component {
   render() {
     
     const { error, isLoaded, items } = this.state;
+    console.log(this.state)
     if (error && items) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {
@@ -80,7 +81,7 @@ class Question extends Component {
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
-          <Link to={"/Edit/" + item[this.state.x].question}>
+          <Link to={"/Edit/" + item[this.state.x].id}>
              <button>Edit</button> 
             </Link>
             {/* <h3>
