@@ -16,7 +16,6 @@ class Question extends Component {
 
   componentDidMount() {
     let language = this.props.match.params.question;
-    console.log(language);
     fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
       .then(res => res.json())
       .then(
@@ -42,7 +41,6 @@ class Question extends Component {
   nextQuestion = () => {
     const { items } = this.state;
     let item = items;
-    console.log(item[this.state.x].id);
     let current = this.state.x;
     if (current < items.length - 1) {
       this.setState({
@@ -61,7 +59,6 @@ class Question extends Component {
   };
   render() {
     const { error, isLoaded, items } = this.state;
-    console.log(this.state);
     if (error && items) {
       return <div>Error: {error.message}</div>;
     } else if (!isLoaded) {

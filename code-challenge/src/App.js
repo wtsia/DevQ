@@ -10,8 +10,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // error: null,
-      // isLoaded: false,
+      error: null,
+      isLoaded: false,
       items: []
     };
   }

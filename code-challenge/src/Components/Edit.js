@@ -44,10 +44,7 @@ class Edit extends Component {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      // let current = this.state.x + 1;
       let item = items;
-      console.log(item);
-      console.log(items);
       return (
         <div className="container">
           <div className="editContainer">
