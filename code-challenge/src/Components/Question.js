@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Question.css";
 
 class Question extends Component {
   constructor(props) {
@@ -30,6 +31,20 @@ class Question extends Component {
       );
   }
 
+  //   nextQuestion = () => {
+  //     let item = this.state;
+  //     for (let x = 0; x < item.length; x++) {
+  //       item[x]++;
+  //     }
+  //   };
+
+  //   previousQuestion = () => {
+  //     let item = this.state;
+  //     for (let x = 0; x < item.length; x++) {
+  //       item[x]--;
+  //     }
+  //   };
+
   render() {
     const { error, isLoaded, items } = this.state;
     if (error && items) {
@@ -38,19 +53,16 @@ class Question extends Component {
       return <div>Loading...</div>;
     } else {
       let item = items;
-      //   for (let i = 0; i < item.length; i++) {
-      //     if (item[0].question) {
-      //     }
-      //   }
       return (
         <div>
-          {/* <a href={item[1].question}>Next</a> */}
           <h1>{item[0].question}</h1>
           <input
             className="answer"
             type="text"
             placeholder="Write Your Answer Here! Check Below&darr;"
           />
+          {/* <button onClick={previousQuestion}>&larr;</button>
+          <button onClick={nextQuestion}>&rarr;</button> */}
           <div className="answers">
             <h2>Hint:</h2>
             <p>{item[0].hint}</p>
