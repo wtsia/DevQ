@@ -8,7 +8,7 @@ class Question extends Component {
       error: null,
       isLoaded: false,
       items: [],
-      x: 3
+      x: 0
     };
   }
 
@@ -34,15 +34,24 @@ class Question extends Component {
   }
 
   nextQuestion = () => {
-    this.setState({
-      x: this.state.x + 1
-    });
+    const { items } = this.state;
+    let current = this.state.x;
+    console.log(items.length);
+    console.log(this.state.x);
+    if (current < items.length - 1) {
+      this.setState({
+        x: this.state.x + 1
+      });
+    }
   };
 
   previousQuestion = () => {
-    this.setState({
-      x: this.state.x - 1
-    });
+    let current = this.state.x;
+    if (current > 0) {
+      this.setState({
+        x: this.state.x - 1
+      });
+    }
   };
 
   render() {
@@ -52,10 +61,14 @@ class Question extends Component {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
+      let current = this.state.x + 1;
       let item = items;
       return (
         <div>
           <h1>{item[this.state.x].question}</h1>
+          <h2>
+            {current}/{items.length}
+          </h2>
           <input
             className="answer"
             type="text"
