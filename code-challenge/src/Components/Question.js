@@ -82,7 +82,9 @@ class Question extends Component {
             <h2>Answer:</h2>
             <p>{item[this.state.x].answer}</p>
             <h2>
-              <a href={item[this.state.x].url}>[ Documentation ]</a>
+              <a target="_blank" href={item[this.state.x].url}>
+                [ Documentation ]
+              </a>
             </h2>
           </div>
         </div>
