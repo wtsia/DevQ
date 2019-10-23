@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./Components/Home.js";
 import About from "./Components/About.js";
 import Question from "./Components/Question.js";
+import Edit from "./Components/Edit.js"
 
 class App extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/Edit" component={Edit} />
               <Route
                 exact
                 path="/:question"

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Route, Link, Switch, Redirect } from "react-router-dom";
 import "./Question.css";
 
 class Question extends Component {
@@ -76,6 +77,7 @@ class Question extends Component {
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
+          <button href="">Edit</button>
           <div className="answers">
             <h2>Hint:</h2>
             <p>{item[this.state.x].hint}</p>
@@ -84,6 +86,9 @@ class Question extends Component {
             <h2>
               <a href={item[this.state.x].url}>[ Documentation ]</a>
             </h2>
+            <Link to={"/Edit"}>
+              <h1 className="link Edit">[ Edit ]</h1>
+            </Link>
           </div>
         </div>
       );
