@@ -7,7 +7,8 @@ class Question extends Component {
     this.state = {
       error: null,
       isLoaded: false,
-      items: []
+      items: [],
+      x: 3
     };
   }
 
@@ -31,19 +32,17 @@ class Question extends Component {
       );
   }
 
-  //   nextQuestion = () => {
-  //     let item = this.state;
-  //     for (let x = 0; x < item.length; x++) {
-  //       item[x]++;
-  //     }
-  //   };
+  nextQuestion = () => {
+    this.setState({
+      x: this.state.x + 1
+    });
+  };
 
-  //   previousQuestion = () => {
-  //     let item = this.state;
-  //     for (let x = 0; x < item.length; x++) {
-  //       item[x]--;
-  //     }
-  //   };
+  previousQuestion = () => {
+    this.setState({
+      x: this.state.x - 1
+    });
+  };
 
   render() {
     const { error, isLoaded, items } = this.state;
@@ -55,21 +54,21 @@ class Question extends Component {
       let item = items;
       return (
         <div>
-          <h1>{item[0].question}</h1>
+          <h1>{item[this.state.x].question}</h1>
           <input
             className="answer"
             type="text"
             placeholder="Write Your Answer Here! Check Below&darr;"
           />
-          {/* <button onClick={previousQuestion}>&larr;</button>
-          <button onClick={nextQuestion}>&rarr;</button> */}
+          <button onClick={this.previousQuestion}>&larr;</button>
+          <button onClick={this.nextQuestion}>&rarr;</button>
           <div className="answers">
             <h2>Hint:</h2>
-            <p>{item[0].hint}</p>
+            <p>{item[this.state.x].hint}</p>
             <h2>Answer:</h2>
-            <p>{item[0].answer}</p>
+            <p>{item[this.state.x].answer}</p>
             <h2>
-              <a href={item[0].url}>[ Documentation ]</a>
+              <a href={item[this.state.x].url}>[ Documentation ]</a>
             </h2>
           </div>
         </div>
