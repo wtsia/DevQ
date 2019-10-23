@@ -3,52 +3,27 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 class Home extends Component {
-  //   constructor(props) {
-  //     super(props);
-  //     this.state = {
-  //       error: null,
-  //       isLoaded: false,
-  //       items: []
-  //     };
-  //   }
-
-  //   componentDidMount() {
-  //     fetch("https://immense-citadel-86220.herokuapp.com/")
-  //       .then(res => res.json())
-  //       .then(
-  //         result => {
-  //           this.setState({
-  //             isLoaded: true,
-  //             items: result
-  //           });
-  //         },
-  //         error => {
-  //           this.setState({
-  //             isLoaded: true,
-  //             error
-  //           });
-  //         }
-  //       );
-  //   }
-
   render() {
-    const questionTypes = [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Express",
-      "React",
-      "Node"
-    ];
     return (
       <div className="container">
-        {questionTypes.map(item => {
-          return (
-            <Link className="button" to={"/" + item}>
-              {item}
-            </Link>
-          );
-        })}
+        <Link className="button" to={"/HTML"}>
+          HTML
+        </Link>
+        <Link className="button" to={"/CSS"}>
+          CSS
+        </Link>
+        <Link className="button" to={"/JavaScript"}>
+          JavaScript
+        </Link>
+        <Link className="button" to={"/Express"}>
+          Express
+        </Link>
+        <Link className="button" to={"/React"}>
+          React
+        </Link>
+        <Link className="button" to={"/Node"}>
+          Node
+        </Link>
       </div>
     );
   }
