@@ -66,13 +66,13 @@ class Question extends Component {
       return (
         <div>
           <h1>{item[this.state.x].question}</h1>
-          <h2>
+          <p>
             {current}/{items.length}
-          </h2>
+          </p>
           <input
             className="answer"
             type="text"
-            placeholder="Write Your Answer Here! Check Below&darr;"
+            placeholder="Write Your Answer Here! Check Below."
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
