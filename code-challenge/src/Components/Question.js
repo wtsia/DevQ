@@ -74,7 +74,7 @@ class Question extends Component {
           <input
             className="answer"
             type="text"
-            placeholder="Write Your Answer Here! Check Below."
+            placeholder="Write Your Answer Here &rarr; Check Below &darr;"
           />
           <button onClick={this.previousQuestion}>&larr;</button>
           <button onClick={this.nextQuestion}>&rarr;</button>
