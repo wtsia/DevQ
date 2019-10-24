@@ -37,7 +37,6 @@ class App extends Component {
           <div>
             <Switch>
               <Route exact path="/home" component={Home} />
-              <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/new" component={New} />
               <Route exact path="/Edit/:id" component={Edit} />
@@ -49,6 +48,7 @@ class App extends Component {
                 )}
               />
               <Route path="/*" render={() => <Redirect to="/home" />} />
+              <Route path="https://wtsia.github.io/DevQ/" render={() => <Redirect to="https://wtsia.github.io/home" />} />
             </Switch>
           </div>
         </main>
