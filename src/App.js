@@ -25,7 +25,7 @@ class App extends Component {
             <Link to="/new">
               <h1 className="link">[ Q + ]</h1>
             </Link>
-            <Link to="/home">
+            <Link to="/">
               <h1 className="link logo">DevQ</h1>
             </Link>
             <Link to="/about">
