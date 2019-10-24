@@ -38,7 +38,14 @@ class Question extends Component {
           });
         }
       );
-  }
+    }
+    if (language === "DevQ") {
+      this.setState(
+        {
+          isLoaded: false
+        }
+      )
+    } 
 }
 
   nextQuestion = () => {
