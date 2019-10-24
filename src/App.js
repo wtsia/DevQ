@@ -25,7 +25,7 @@ class App extends Component {
             <Link to="/new">
               <h1 className="link">[ Q + ]</h1>
             </Link>
-            <Link to="/">
+            <Link to="/home">
               <h1 className="link logo">DevQ</h1>
             </Link>
             <Link to="/about">
@@ -36,7 +36,7 @@ class App extends Component {
         <main>
           <div>
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/home" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/new" component={New} />
               <Route path="/Edit/:id" component={Edit} />
@@ -47,7 +47,7 @@ class App extends Component {
                   <Question {...route} items={this.state.items} />
                 )}
               />
-              <Route path="/*" render={() => <Redirect to="/" />} />
+              <Route path="/*" render={() => <Redirect to="/home" />} />
             </Switch>
           </div>
         </main>
