@@ -23,10 +23,10 @@ class App extends Component {
         <header className="App-header">
           <nav>
             <Link to="/new">
-              <h1 className="link">[ New ]</h1>
+              <h1 className="link">[ Q + ]</h1>
             </Link>
             <Link to="/home">
-              <h1 className="link logo">GA-Code-Challenge</h1>
+              <h1 className="link logo">DevQ</h1>
             </Link>
             <Link to="/about">
               <h1 className="link">[ About ]</h1>
