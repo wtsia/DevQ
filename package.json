@@ -2,11 +2,10 @@
   "name": "code-challenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wtsia.github.io/DevQ",
+  "homepage": "https://wtsia.github.io/DevQ/",
   "dependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
-    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-router": "^5.1.2",
@@ -36,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
