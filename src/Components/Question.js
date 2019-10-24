@@ -16,6 +16,7 @@ class Question extends Component {
 
   componentDidMount() {
     let language = this.props.match.params.question;
+    console.log(language);
     fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
       .then(res => res.json())
       .then(
