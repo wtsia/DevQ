@@ -23,13 +23,13 @@ class App extends Component {
         <header className="App-header">
           <nav>
             <Link to="/new">
-              <h1 className="link home">[ New ]</h1>
+              <h1 className="link">[ New ]</h1>
             </Link>
             <Link to="/home">
               <h1 className="link logo">GA-Code-Challenge</h1>
             </Link>
             <Link to="/about">
-              <h1 className="link about">[ About ]</h1>
+              <h1 className="link">[ About ]</h1>
             </Link>
           </nav>
         </header>
