@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .editContainer {
   width: 100%;
 }
@@ -5,6 +11,13 @@
 .edit {
   display: flex;
   text-align: left;
+}
+
+.editPage {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .delete {
@@ -15,11 +28,4 @@
 
 form {
   width: 100%;
-}
-
-.editPage {
-  width: 100%;
-  height: 30px;
-  font-size: 14px;
-  margin-bottom: 20px;
 }

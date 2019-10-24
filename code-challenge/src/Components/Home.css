@@ -1,7 +1,7 @@
-div.languages {
+.container {
+  display: flex;
   flex-wrap: wrap;
-  width: 900px;
-  position: relative;
+  justify-content: center;
 }
 
 .button {
@@ -16,10 +16,5 @@ div.languages {
   height: 100px;
   background-color: #add8e6;
   font-size: 30px;
-  color: black;
-}
-
-.languages > button > a {
-  text-decoration: none;
   color: black;
 }
