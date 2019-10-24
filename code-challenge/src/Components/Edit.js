@@ -104,13 +104,12 @@ class Edit extends Component {
                 <input type="submit" value="Post" />
               </form>
             </div>
-            {/* ADD "DELETE" FUNCTIONALITY HERE */}
-            {/* <form
+            <form
               action={`https://immense-citadel-86220.herokuapp.com/edit/${this.props.match.params.id}?_method=delete`}
-              method="DELETE"
+              method="POST"
             >
               <input className="delete" type="submit" value="Delete" />
-            </form> */}
+            </form>
           </div>
         </div>
       );
