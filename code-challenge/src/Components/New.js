@@ -18,12 +18,10 @@ class New extends Component {
         <div className="editContainer">
           <h1>Add a New Question!</h1>
           <div className="edit">
-            <form>
-              {/* ADD "CREATE" FUNCTIONALITY HERE */}
-              {/* <form
-                action={`https://immense-citadel-86220.herokuapp.com/edit/${this.props.match.params.id}?_method=put`}
-                method="POST"
-              > */}
+            <form
+              action={`https://immense-citadel-86220.herokuapp.com/new`}
+              method="POST"
+            >
               <p>
                 <h2>Question:</h2>
                 <input className="editPage" type="text" name="question" />
@@ -42,13 +40,25 @@ class New extends Component {
               </p>
               <p>
                 <h2>Type: </h2>
-                <select>
-                  <option value="HTML">HTML</option>
-                  <option value="CSS">CSS</option>
-                  <option value="JavaScript">JavaScript</option>
-                  <option value="React">React</option>
-                  <option value="Express">Express</option>
-                  <option value="Node">Node</option>
+                <select className="editPage" type="text" name="type">
+                  <option name="type" value="HTML">
+                    HTML
+                  </option>
+                  <option name="type" value="CSS">
+                    CSS
+                  </option>
+                  <option name="type" value="JavaScript">
+                    JavaScript
+                  </option>
+                  <option name="type" value="React">
+                    React
+                  </option>
+                  <option name="type" value="Express">
+                    Express
+                  </option>
+                  <option name="type" value="Node">
+                    Node
+                  </option>
                 </select>
               </p>
               <input type="submit" value="Post" />
@@ -59,6 +69,5 @@ class New extends Component {
     );
   }
 }
-// }
 
 export default New;
