@@ -2,7 +2,7 @@
   "name": "code-challenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://wtsia.github.io/DevQ/",
+  "homepage": "https://wtsia.github.io/home",
   "dependencies": {
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
