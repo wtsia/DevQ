@@ -56,38 +56,46 @@ class Edit extends Component {
               >
                 <p>
                   <h2>Question:</h2>
+                  <p>{items.question}</p>
                   <input
                     className="editPage"
                     type="text"
                     name="question"
                     placeholder={items.question}
+                    required
                   />
                 </p>
                 <p>
                   <h2>Hint: </h2>
+                  <p>{items.hint}</p>
                   <input
                     className="editPage"
                     type="text"
                     name="hint"
                     placeholder={items.hint}
+                    required
                   />
                 </p>
                 <p>
                   <h2>Answer: </h2>
+                  <p>{items.answer}</p>
                   <input
                     className="editPage"
                     type="text"
                     name="answer"
                     placeholder={items.answer}
+                    required
                   />
                 </p>
                 <p>
                   <h2>URL: </h2>
+                  <p>{items.url}</p>
                   <input
                     className="editPage"
                     type="text"
                     name="url"
                     placeholder={items.url}
+                    required
                   />
                 </p>
                 <p>

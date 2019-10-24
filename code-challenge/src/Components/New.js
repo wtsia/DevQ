@@ -24,19 +24,29 @@ class New extends Component {
             >
               <p>
                 <h2>Question:</h2>
-                <input className="editPage" type="text" name="question" />
+                <input
+                  className="editPage"
+                  type="text"
+                  name="question"
+                  required
+                />
               </p>
               <p>
                 <h2>Hint: </h2>
-                <input className="editPage" type="text" name="hint" />
+                <input className="editPage" type="text" name="hint" required />
               </p>
               <p>
                 <h2>Answer: </h2>
-                <input className="editPage" type="text" name="answer" />
+                <input
+                  className="editPage"
+                  type="text"
+                  name="answer"
+                  required
+                />
               </p>
               <p>
                 <h2>Read More URL: </h2>
-                <input className="editPage" type="text" name="url" />
+                <input className="editPage" type="text" name="url" required />
               </p>
               <p>
                 <h2>Type: </h2>
