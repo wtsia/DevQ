@@ -47,7 +47,7 @@ class App extends Component {
                   <Question {...route} items={this.state.items} />
                 )}
               />
-              <Route path="/*" render={() => <Redirect to="/home" />} />
+              <Route path="/DevQ" render={() => <Redirect to="/home" />} />
             </Switch>
           </div>
         </main>
