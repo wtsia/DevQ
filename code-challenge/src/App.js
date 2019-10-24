@@ -5,6 +5,7 @@ import Home from "./Components/Home.js";
 import About from "./Components/About.js";
 import Question from "./Components/Question.js";
 import Edit from "./Components/Edit.js";
+import New from "./Components/New.js";
 
 class App extends Component {
   constructor(props) {
@@ -21,10 +22,12 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <nav>
-            <Link to="/home">
-              <h1 className="link home">[ Home ]</h1>
+            <Link to="/new">
+              <h1 className="link home">[ New ]</h1>
             </Link>
-            <h1 className="logo">GA-Code-Challenge</h1>
+            <Link to="/home">
+              <h1 className="link logo">GA-Code-Challenge</h1>
+            </Link>
             <Link to="/about">
               <h1 className="link about">[ About ]</h1>
             </Link>
@@ -35,6 +38,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/home" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/new" component={New} />
               <Route exact path="/Edit/:id" component={Edit} />
               <Route
                 exact

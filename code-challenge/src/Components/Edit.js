@@ -44,12 +44,11 @@ class Edit extends Component {
     } else if (!isLoaded) {
       return <div>Loading...</div>;
     } else {
-      let item = items;
       return (
         <div className="container">
           <div className="editContainer">
             <h1>Edit Question</h1>
-            <p>Don't forget to rewrite all input fields :)</p>
+            <p>Don't forget to rewrite all input fields &#9786;</p>
             <div className="edit">
               <form
                 action={`https://immense-citadel-86220.herokuapp.com/edit/${this.props.match.params.id}?_method=put`}
@@ -105,6 +104,13 @@ class Edit extends Component {
                 <input type="submit" value="Post" />
               </form>
             </div>
+            {/* ADD "DELETE" FUNCTIONALITY HERE */}
+            {/* <form
+              action={`https://immense-citadel-86220.herokuapp.com/edit/${this.props.match.params.id}?_method=delete`}
+              method="DELETE"
+            >
+              <input className="delete" type="submit" value="Delete" />
+            </form> */}
           </div>
         </div>
       );
