@@ -40,7 +40,6 @@ class Question extends Component {
 
   nextQuestion = () => {
     const { items } = this.state;
-    let item = items;
     let current = this.state.x;
     if (current < items.length - 1) {
       this.setState({
