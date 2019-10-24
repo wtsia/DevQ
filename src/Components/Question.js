@@ -17,7 +17,8 @@ class Question extends Component {
   componentDidMount() {
     let language = this.props.match.params.question;
     console.log(language);
-    fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
+    if (language !== "DevQ") {
+      fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
       .then(res => res.json())
       .then(
         result => {
@@ -38,6 +39,7 @@ class Question extends Component {
         }
       );
   }
+}
 
   nextQuestion = () => {
     const { items } = this.state;
