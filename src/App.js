@@ -36,10 +36,10 @@ class App extends Component {
         <main>
           <div>
             <Switch>
-              <Route exact path="/home" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/new" component={New} />
-              <Route exact path="/Edit/:id" component={Edit} />
+              <Route exact path="/" component={Home} />
+              <Route path="/about" component={About} />
+              <Route path="/new" component={New} />
+              <Route path="/Edit/:id" component={Edit} />
               <Route
                 exact
                 path="/:question"
@@ -47,8 +47,7 @@ class App extends Component {
                   <Question {...route} items={this.state.items} />
                 )}
               />
-              <Route path="/*" render={() => <Redirect to="/home" />} />
-              <Route path="https://wtsia.github.io/DevQ/" render={() => <Redirect to="https://wtsia.github.io/home" />} />
+              <Route path="/*" render={() => <Redirect to="/" />} />
             </Switch>
           </div>
         </main>
