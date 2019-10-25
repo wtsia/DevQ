@@ -34,6 +34,18 @@ Features in progress include adding a customizeable timer to each question, addi
 
 ## Additional Resources:
 
+Building a React App:
+
+- https://reactjs.org
+
+  Setting URL Parameters:
+
+- https://tylermcginnis.com/react-router-url-parameters/
+
+  Deployment:
+
+- https://www.codementor.io/louisdante9/how-i-learned-deploying-react-router-app-to-gh-pages-orq146eym
+
 ## Installation Instructions:
 
 https://wtsia.github.io/DevQ/
