@@ -4,7 +4,7 @@
 
 DevQ is a study platform for Software Engineers. Users can choose from a variety of languages to study, where they will then be prompted with a question, an input section to note their answer, a hint, an answer, and a link to further documentation. Further, users can add their own questions to existing languages, edit questions, and delete questions.
 
-## Examples:
+## Planning & Examples:
 
 <!-- ![Project Example 1](images/ProjectExample1.png); -->
 
