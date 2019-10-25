@@ -35,10 +35,15 @@ Features in progress include adding a customizeable timer to each question, addi
 ## Additional Resources:
 
 Building a React App:
+<br>
 https://reactjs.org
+<br>
 Setting URL Parameters:
+<br>
 https://tylermcginnis.com/react-router-url-parameters/
+<br>
 Deployment:
+<br>
 https://www.codementor.io/louisdante9/how-i-learned-deploying-react-router-app-to-gh-pages-orq146eym
 
 ## Installation Instructions:
