@@ -28,6 +28,8 @@ Features in progress include adding a customizeable timer to each question, addi
 - Heroku
 - GitHub
 
+## Additional Resources:
+
 ## Installation Instructions:
 
 https://wtsia.github.io/DevQ/
