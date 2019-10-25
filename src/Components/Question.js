@@ -16,7 +16,6 @@ class Question extends Component {
 
   componentDidMount() {
     let language = this.props.match.params.question;
-    console.log(language);
     if (language !== "DevQ") {
       fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
         .then(res => res.json())
@@ -64,6 +63,30 @@ class Question extends Component {
       });
     }
   };
+
+toggleAnswer = () => {
+let x = document.getElementById('answer')
+if( x.style.display === 'none')
+{
+x.style.display = "block"
+}
+else{
+  x.style.display = "none"
+}
+}
+
+toggleHint = () => {
+  let x = document.getElementById('hint')
+  if( x.style.display === 'none')
+  {
+  x.style.display = "block"
+  }
+  else{
+    x.style.display = "none"
+  }
+  }
+
+
   render() {
     const { error, isLoaded, items } = this.state;
     if (error && items) {
@@ -90,10 +113,10 @@ class Question extends Component {
             <button>Edit</button>
           </Link>
           <div className="answers">
-            <h2>Hint:</h2>
-            <p>{item[this.state.x].hint}</p>
-            <h2>Answer:</h2>
-            <p>{item[this.state.x].answer}</p>
+            <h2 onClick={this.toggleHint}>Hint:</h2>
+            <p id="hint" >{item[this.state.x].hint}</p>
+            <h2 onClick={this.toggleAnswer}>Answer:</h2>
+            <p id="answer">{item[this.state.x].answer}</p>
             <h2>
               <a
                 target="_blank"

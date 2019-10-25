@@ -44,6 +44,11 @@ main {
   text-decoration: none;
 }
 
+.link:hover {
+  color: lightcoral;
+  text-decoration: none;
+}
+
 button {
   margin-left: 10px;
   margin-right: 10px;
@@ -58,4 +63,9 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f5;
+  color: black;
 }

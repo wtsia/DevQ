@@ -14,7 +14,6 @@ class Edit extends Component {
 
   componentDidMount() {
     let language = this.props.match.params.id;
-    console.log(this.props);
     fetch(`https://immense-citadel-86220.herokuapp.com/edit/${language}`)
       .then(res => res.json())
       .then(
