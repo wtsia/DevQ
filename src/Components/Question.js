@@ -113,9 +113,9 @@ toggleHint = () => {
             <button>Edit</button>
           </Link>
           <div className="answers">
-            <h2 onClick={this.toggleHint}>Hint:</h2>
+            <h2 onClick={this.toggleHint}>[ Hint ]</h2>
             <p id="hint" >{item[this.state.x].hint}</p>
-            <h2 onClick={this.toggleAnswer}>Answer:</h2>
+            <h2 onClick={this.toggleAnswer}>[ Answer ]</h2>
             <p id="answer">{item[this.state.x].answer}</p>
             <h2>
               <a
