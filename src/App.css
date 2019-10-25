@@ -8,6 +8,10 @@ a {
   color: black;
 }
 
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
 main {
   margin-left: 10%;
   margin-right: 10%;
@@ -27,6 +31,7 @@ main {
   font-size: calc(10px + 1vmin);
   color: white;
   text-decoration: none;
+  font-family: 'Raleway', sans-serif;
 }
 
 .logo {
@@ -43,4 +48,14 @@ button {
   margin-left: 10px;
   margin-right: 10px;
   width: 75px;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

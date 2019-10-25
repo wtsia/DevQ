@@ -1,6 +1,7 @@
 div.About {
   text-align: center;
   width: 800px;
+  font-family: 'Raleway', sans-serif;
 }
 
 div.About > p {
