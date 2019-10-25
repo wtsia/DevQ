@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Question.css";
 import "./Edit";
 
@@ -19,34 +19,32 @@ class Question extends Component {
     console.log(language);
     if (language !== "DevQ") {
       fetch(`https://immense-citadel-86220.herokuapp.com/${language}`)
-      .then(res => res.json())
-      .then(
-        result => {
-          this.setState(
-            {
+        .then(res => res.json())
+        .then(
+          result => {
+            this.setState(
+              {
+                isLoaded: true,
+                items: result,
+                x: 0
+              },
+              newState => console.log(this.state, newState)
+            );
+          },
+          error => {
+            this.setState({
               isLoaded: true,
-              items: result,
-              x: 0
-            },
-            newState => console.log(this.state, newState)
-          );
-        },
-        error => {
-          this.setState({
-            isLoaded: true,
-            error
-          });
-        }
-      );
+              error
+            });
+          }
+        );
     }
     if (language === "DevQ") {
-      this.setState(
-        {
-          isLoaded: false
-        }
-      )
-    } 
-}
+      this.setState({
+        isLoaded: false
+      });
+    }
+  }
 
   nextQuestion = () => {
     const { items } = this.state;
@@ -97,7 +95,11 @@ class Question extends Component {
             <h2>Answer:</h2>
             <p>{item[this.state.x].answer}</p>
             <h2>
-              <a target="_blank" href={item[this.state.x].url}>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={item[this.state.x].url}
+              >
                 [ Documentation ]
               </a>
             </h2>
