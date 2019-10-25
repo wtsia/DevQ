@@ -6,7 +6,12 @@ DevQ is a study platform for Software Engineers. Users can choose from a variety
 
 ## Planning & Examples:
 
-<!-- ![Project Example 1](images/ProjectExample1.png); -->
+![Wireframe](./planning/Wireframe.png);
+![Schedule](./planning/Schedule.png);
+![Project Example 1](./images/ProjectExample1.png);
+![Project Example 2](./images/ProjectExample2.png);
+![Project Example 3](./images/ProjectExample3.png);
+![Project Example 4](./images/ProjectExample4.png);
 
 ## Current Features:
 
