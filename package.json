@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://wtsia.github.io/DevQ/",
   "dependencies": {
+    "@testing-library/react": "^9.3.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "react": "^16.10.2",
