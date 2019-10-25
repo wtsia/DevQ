@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/DevQ/static/css/main.abd1abb9.chunk.css",
-    "main.js": "/DevQ/static/js/main.612866fd.chunk.js",
-    "main.js.map": "/DevQ/static/js/main.612866fd.chunk.js.map",
+    "main.css": "/DevQ/static/css/main.2ae2e703.chunk.css",
+    "main.js": "/DevQ/static/js/main.1cd69dc0.chunk.js",
+    "main.js.map": "/DevQ/static/js/main.1cd69dc0.chunk.js.map",
     "runtime-main.js": "/DevQ/static/js/runtime-main.87130514.js",
     "runtime-main.js.map": "/DevQ/static/js/runtime-main.87130514.js.map",
     "static/js/2.de518fd9.chunk.js": "/DevQ/static/js/2.de518fd9.chunk.js",
     "static/js/2.de518fd9.chunk.js.map": "/DevQ/static/js/2.de518fd9.chunk.js.map",
     "index.html": "/DevQ/index.html",
-    "precache-manifest.18190dd00a24d1a2c7fa678284b4e90b.js": "/DevQ/precache-manifest.18190dd00a24d1a2c7fa678284b4e90b.js",
+    "precache-manifest.a24be37228733902e4b9ddc680d44adc.js": "/DevQ/precache-manifest.a24be37228733902e4b9ddc680d44adc.js",
     "service-worker.js": "/DevQ/service-worker.js",
-    "static/css/main.abd1abb9.chunk.css.map": "/DevQ/static/css/main.abd1abb9.chunk.css.map"
+    "static/css/main.2ae2e703.chunk.css.map": "/DevQ/static/css/main.2ae2e703.chunk.css.map",
+    "static/media/Raleway-Regular.ttf": "/DevQ/static/media/Raleway-Regular.9942588a.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.87130514.js",
     "static/js/2.de518fd9.chunk.js",
-    "static/css/main.abd1abb9.chunk.css",
-    "static/js/main.612866fd.chunk.js"
+    "static/css/main.2ae2e703.chunk.css",
+    "static/js/main.1cd69dc0.chunk.js"
   ]
 }
